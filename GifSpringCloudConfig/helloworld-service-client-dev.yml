@@ -1,2 +1,8 @@
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://admin:123456@localhost:8761/eureka
 hello:
   config: 欢迎到来bb
