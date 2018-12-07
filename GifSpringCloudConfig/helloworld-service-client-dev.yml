@@ -1,2 +1,17 @@
 hello:
   config: 欢迎到来qqaa
+spring:
+  thymeleaf:
+    mode: HTML
+    cache: false #开发阶段务必关闭缓存 (=false)
+    prefix: classpath:/templates/
+    servlet:
+      content-type: text/html
+    encoding: UTF-8
+    suffix: .html
+logging:
+  level:
+    org.springframework.cloud.gateway: TRACE
+    org.springframework.http.server.reactive: DEBUG
+    org.springframework.web.reactive: DEBUG
+    reactor.ipc.netty: DEBUG 
